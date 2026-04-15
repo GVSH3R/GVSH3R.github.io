@@ -30,6 +30,24 @@ body {
     transform: scale(1.08) rotate(2deg);
     border-color: #0d6efd;
 }
+/* Hero Banner Style */
+.hero-banner {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 100px 0 140px 0; /* Espacio extra abajo para el solapamiento */
+}
+
+.text-primary {
+    color: #0d6efd !important; /* Azul vibrante para el subtítulo */
+}
+
+/* Efecto de solapamiento */
+.mt-n5 {
+    margin-top: -60px !important;
+}
+
+#sobre-mi {
+    border: 1px solid rgba(0,0,0,0.05);
+}
 
 /* =========================================
    HABILIDADES (SKILLS)
@@ -97,6 +115,33 @@ body {
     border-left-width: 5px !important;
     background: linear-gradient(to right, #f8faff, #ffffff);
 }
+/* Estilo Bento Enterprise */
+.bento-card {
+    min-height: 320px;
+    border-radius: 20px !important;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+}
+
+/* Decoración sutil de fondo para las tarjetas */
+.bento-card::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    z-index: 0;
+}
 
 /* =========================================
    ANIMACIONES DE ENTRADA (FADE IN)
@@ -110,4 +155,51 @@ body {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+/* Footer con nombres y transiciones */
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.footer-link i {
+    font-size: 1.2rem;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    background-color: rgba(13, 110, 253, 0.15); /* Un fondo azul muy sutil */
+    transform: translateY(-2px);
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: #0f172a !important; /* Coherencia con el Hero */
+}
+/* Soft Skills Cards */
+.soft-skill-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.soft-skill-card:hover {
+    border-color: #0d6efd;
+    background-color: #f8faff;
+    transform: translateY(-5px);
+}
+
+.soft-skill-card i {
+    transition: transform 0.3s ease;
+}
+
+.soft-skill-card:hover i {
+    transform: scale(1.1);
 }
