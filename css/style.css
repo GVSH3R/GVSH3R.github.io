@@ -21,8 +21,8 @@ body {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border: 5px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    border: 5px solid #0d6efd !important;
+    box-shadow: 0 0 25px rgba(13, 110, 253, 0.4);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -40,6 +40,8 @@ body {
     padding: 10px 20px;
     margin: 6px;
     border-radius: 50px;
+    min-width: 100px;
+    justify-content: center;
     background: white;
     display: inline-flex;
     align-items: center;
@@ -88,6 +90,12 @@ body {
 
 .project-card:hover .project-img-container img {
     transform: scale(1.15);
+}
+
+.border-primary {
+    border-left: 5px solid #0d6efd !important; /* Resalta tu experiencia senior */
+    border-left-width: 5px !important;
+    background: linear-gradient(to right, #f8faff, #ffffff);
 }
 
 /* =========================================
